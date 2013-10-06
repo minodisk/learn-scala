@@ -1,4 +1,5 @@
 object Bootstrap {
+
   def main(args: Array[String]) {
     val x = new Rational(1, 3)
     println(x)
@@ -10,6 +11,7 @@ object Bootstrap {
     run6_5
     run6_6
     run6_7
+    run6_8
   }
 
   def run6_5 = {
@@ -25,7 +27,7 @@ object Bootstrap {
     println(r.denom)
   }
 
-  def run6_6 = {
+  def run6_6:Unit = {
     println("§6.6")
 
     val oneHalf = new Rational(1, 2)
@@ -40,6 +42,10 @@ object Bootstrap {
 
     val y = new Rational(3)
     println(y)
+  }
+
+  def run6_8 = {
+    println(new Rational(66, 42))
   }
 
 }
