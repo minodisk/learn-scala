@@ -12,6 +12,7 @@ object Bootstrap {
     run6_6
     run6_7
     run6_8
+    run6_9
   }
 
   def run6_5 = {
@@ -19,7 +20,7 @@ object Bootstrap {
 
     val oneHalf = new Rational(1, 2)
     val twoThirds = new Rational(2, 3)
-    val result = oneHalf add twoThirds
+    val result = oneHalf + twoThirds
     println(result)
 
     val r = new Rational(1, 2)
@@ -45,7 +46,21 @@ object Bootstrap {
   }
 
   def run6_8 = {
+    println("§6.8")
+
     println(new Rational(66, 42))
+  }
+
+  def run6_9 = {
+    println("§6.9")
+
+    val x = new Rational(1, 2)
+    val y = new Rational(2, 3)
+    println(x + y)
+    println(x.+(y))
+    println(x + x * y)
+    println((x + x) * y)
+    println(x + (x * y))
   }
 
 }
