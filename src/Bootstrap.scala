@@ -9,6 +9,7 @@ object Bootstrap {
 
     run6_5
     run6_6
+    run6_7
   }
 
   def run6_5 = {
@@ -32,6 +33,13 @@ object Bootstrap {
     println(oneHalf lessThan twoThirds)
     println(twoThirds lessThan oneHalf)
     println(oneHalf max twoThirds)
+  }
+
+  def run6_7 = {
+    println("§6.7")
+
+    val y = new Rational(3)
+    println(y)
   }
 
 }
