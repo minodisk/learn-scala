@@ -3,7 +3,7 @@ import scala.io.Source
 object Section8_2 {
 
   def main(args: Array[String]) {
-    progressFile("/Users/minodisk/workspace/learn-scala/resource/lorem_ipsum.txt", 100)
+    progressFile("resource/lorem_ipsum.txt", 100)
   }
 
   def progressFile(filename: String, width: Int) {
