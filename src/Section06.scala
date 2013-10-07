@@ -1,4 +1,4 @@
-object Test06 {
+object Section06 {
 
   def main(args: Array[String]) {
     val x = new Rational(1, 3)

@@ -1,4 +1,4 @@
-object Test07 {
+object Section07 {
 
   def main(args: Array[String]) {
     println(multiTable())
