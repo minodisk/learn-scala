@@ -1,23 +1,14 @@
 object Test07 {
 
   def main(args: Array[String]) {
-
-    val a = 1;
-    {
-      val a = 2
-      println(a)
-    }
-    println(a)
-
     println(multiTable())
   }
 
-  def multiTable() = {
-    val tableSeq =
-      for (row <- 1 to 10)
-      yield makeRow(row)
-    tableSeq.mkString("\n")
-  }
+  def multiTable() =
+    multiTableSeq().mkString("\n")
+
+  def multiTableSeq() =
+    for (row <- 1 to 10) yield makeRow(row)
 
   def makeRow(row:Int) =
     makeRowSeq(row).mkString(" ")
