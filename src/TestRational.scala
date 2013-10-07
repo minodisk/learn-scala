@@ -1,4 +1,4 @@
-object Bootstrap {
+object TestRational {
 
   def main(args: Array[String]) {
     val x = new Rational(1, 3)
