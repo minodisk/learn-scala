@@ -17,10 +17,10 @@ object Element {
   }
 
   private class UniformElement(
-                                chr: Char,
-                                override val width: Int,
-                                override val height: Int
-                                ) extends Element {
+    chr: Char,
+    override val width: Int,
+    override val height: Int
+  ) extends Element {
 
     private val line = chr.toString * width
 
