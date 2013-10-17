@@ -64,6 +64,9 @@ object Section15 {
 
     println(isStringArray(Array("abc", "def")))
     println(isStringArray(Array(1, 2, 3)))
+
+    println(simplifyAdd(BinOp("+", Number(1), Number(2))))
+    println(simplifyAdd(BinOp("+", Number(3), Number(3))))
   }
 
   def simplifyTop(expr:Expr):Expr = expr match {
@@ -112,6 +115,11 @@ object Section15 {
       case a:Array[String] => true
       case _ => false
     }
+
+  def simplifyAdd(e:Expr) = e match {
+    case BinOp("+", x, y) if x == y => BinOp("*", x, Number(2))
+    case _ => e
+  }
 
 }
 
